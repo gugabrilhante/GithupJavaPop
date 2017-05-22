@@ -263,7 +263,7 @@ public class MainActivity extends AppCompatActivity implements ObservableScrollV
                     ArrayList<Repository> list = new ArrayList<Repository>(repositoryResponse.getItems());
                     repositories.addAll(list);
                     for(int i=0; i<list.size(); i++)pushToRealm(list.get(i), info);
-                    repositoriesDisplay.addAll(list);
+                    repositoriesDisplay = repositories;
                     finishProgressViewBottomLoading();
                 }else{
                     cleanRealm();
@@ -281,12 +281,18 @@ public class MainActivity extends AppCompatActivity implements ObservableScrollV
 
         }
         catch (JsonParseException e) {
-
-            setLoading(false, true);
+            if(isAdapterAttached){
+                finishProgressViewBottomLoading();
+            }else {
+                setLoading(false, true);
+            }
         } catch (IOException e) {
             e.printStackTrace();
-
-            setLoading(false, true);
+            if(isAdapterAttached){
+                finishProgressViewBottomLoading();
+            }else {
+                setLoading(false, true);
+            }
         }
     }
 
