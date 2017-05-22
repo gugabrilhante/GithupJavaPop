@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_box"
+    android:padding="30sp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/dialogcustom_title_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:layout_marginBottom="5sp"/>
+
+    <TextView
+        android:id="@+id/dialogcustom_message_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Message"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_marginBottom="5sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/dialogcustom_dialog_option01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:layout_marginBottom="3sp"
+            android:background="@drawable/shape_button"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Ok"
+            />
+
+        <Button
+            android:id="@+id/dialogcustom_dialog_option02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:layout_marginBottom="3sp"
+            android:background="@drawable/shape_button"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Cancel"
+            />
+
+        <Button
+            android:id="@+id/dialogcustom_dialog_option03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:layout_marginBottom="3sp"
+            android:background="@drawable/shape_button"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Cancel"
+            />
+
+        <Button
+            android:id="@+id/dialogcustom_dialog_option04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:background="@drawable/shape_button"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|right"
+    android:id="@+id/celulaprincipal_layout"
+    android:elevation="1dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+
+            <TextView
+                android:id="@+id/repositoryNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do Repositorio"
+                android:textColor="@color/mainTextView"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrição do Repositorio"
+                android:textColor="@color/secondTextView"
+                android:textSize="15sp"/>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10sp">
+
+                <ImageView
+                    android:id="@+id/forkImageView"
+                    android:layout_width="12sp"
+                    android:layout_height="23sp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/colorItens"
+                    android:src="@drawable/branch"/>
+
+                <TextView
+                    android:id="@+id/forkTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3sp"
+                    android:text="620"
+                    android:textColor="@color/colorItens"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/starImageView"
+                    android:layout_width="20sp"
+                    android:layout_height="25sp"
+                    android:layout_marginLeft="8sp"
+                    android:background="@drawable/star"/>
+
+                <TextView
+                    android:id="@+id/starTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3sp"
+                    android:text="98"
+                    android:textColor="@color/colorItens"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/userNameImageView"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/user"/>
+
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="username"
+                android:textColor="@color/mainTextView"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/userSecondNameTextView"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="nome sobrenome"
+                android:textColor="@color/secondTextView"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|right"
+    android:id="@+id/celulaprincipal_layout"
+    android:elevation="1dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pullRequestNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Pull Rquest"
+            android:textColor="@color/mainTextView"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição do Repositorio"
+            android:textColor="@color/secondTextView"
+            android:textSize="15sp"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/userNameImageView"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:textColor="@color/mainTextView"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/userSecondNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nome sobrenome"
+                android:textColor="@color/secondTextView"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

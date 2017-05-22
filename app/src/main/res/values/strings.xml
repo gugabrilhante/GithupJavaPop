@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Github Java Pop</string>
+    <string name="erro_message">Ocorreu um erro ao baixar os dados. Clique aqui para tentar novamente</string>
+    <string name="ferramentas">Ferramentas</string>
+    <string name="filtro">Filtro</string>
+    <string name="filtro_alerta_titule">Filtro está habilitado</string>
+    <string name="filtro_alerta_messagem">Desabilite o filtro para baixar mais repositórios.</string>
+</resources>
